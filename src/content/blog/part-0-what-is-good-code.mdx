@@ -1,0 +1,34 @@
+---
+title: 'Part 0: What is good code?'
+description: 'A series of posts on what makes code good'
+pubDate: 'Sep 22 2024'
+---
+
+As software developers we love code. Particularly *good* code. Sometimes coding feels both easy and difficult. I can write functionally correct code most of the time, yet this code I've written never strikes me as *elegant*, *aesthetic*, or *beautiful*. So what is it that makes good code good?
+
+This blog series is my attempt to answer that question. As of now, I don't have an answer, but we will look at examples, compare and contrast code snippets, and hopefully at the end we become better programmers.
+
+## Coding is composing
+
+I think coding is as much of an art as it is a science. Yes, there are objective measures of code quality such as correctness and styling rules, but beyond such "basic" requirements is *creativity and good taste*. I think it is uncommon among programmers to view coding as a fully technical discipline. Those who have studied computer science in university might relate to viewing humanities subjects (e.g. linguistics) as polar opposites to what we do. I, however, have grown to see more and more similarities between the two.
+
+A good writer composes with *intent*. They write to inform you the news, to make you laugh, to make you emotional, or to make you act. Writing is not more than a means to an end. Similarly, real world coding is not written for the sake of writing code. It is written to solve a problem, and if it doesn't, it doesn't matter how "beautiful" it is. It is bad code. An important takeaway is that code is not meaningful without its context, and we can not judge code in isolation beyond applying general rules of thumb.
+
+All writings also have a target *audience*. This majorly influences the *style and tone* of the prose. One speaks very differently to the public than to a colleague than to yourself. Similarly, code is written for someone too. Most of the time it is for your future self (as you are most likely the maintainer of the code you've written), but it is also for your colleagues (otherwise who's going to approve your PR?), and sometimes for the public (if you're writing open source code). Code that is written once and never read again is a rarity. The only example I can think of is competitive programming, which probably explains why being good at competitive programming has so little to do with being a good software engineer.
+
+## Coding with intent
+
+<div style="display: flex; justify-content: space-between;">
+<div style="width: 48%;">
+```python
+def add(a, b):
+    return a + b
+```
+</div>
+<div style="width: 48%;">
+```python
+def add(a: float, b: float) -> float:
+    return a + b
+```
+</div>
+</div>
