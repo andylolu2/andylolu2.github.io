@@ -11,6 +11,9 @@ export default defineConfig({
     site: 'https://example.com',
     integrations: [mdx(
         {
+            shikiConfig: {
+                theme: 'material-theme-palenight'
+            },
             remarkPlugins: [remarkMath],
             rehypePlugins: [[rehypeKatex, {
                 macros: {}
