@@ -10,13 +10,17 @@ This blog series is my attempt to answer that question. As of now, I don't have 
 
 ## Coding is composing
 
-I think coding is as much of an art as it is a science. Yes, there are objective measures of code quality such as correctness and styling rules, but beyond such "basic" requirements is *creativity and good taste*. I think it is uncommon among programmers to view coding as a fully technical discipline. Those who have studied computer science in university might relate to viewing humanities subjects (e.g. linguistics) as polar opposites to what we do. I, however, have grown to see more and more similarities between the two.
+I think coding is as much of an art as it is a science. Yes, there are objective measures of code quality such as correctness and styling rules, but beyond such "basic" requirements is *creativity and good taste*. Many people, as I once had, might viewing humanities subjects (e.g. linguistics) as polar opposites to what we do. After all, when is the last time I wrote an essay? I only write code nowadays. I never have to fuss over my grammar, word choice, phrasing, or "literary device", what ever that bullshit even means. I just code. There's nothing similar between the two --- _or is there? (Vsauce voice)_
+
+
 
 A good writer composes with *intent*. They write to inform you the news, to make you laugh, to make you emotional, or to make you act. Writing is not more than a means to an end. Similarly, real world coding is not written for the sake of writing code. It is written to solve a problem, and if it doesn't, it doesn't matter how "beautiful" it is. It is bad code. An important takeaway is that code is not meaningful without its context, and we can not judge code in isolation beyond applying general rules of thumb.
 
 All writings also have a target *audience*. This majorly influences the *style and tone* of the prose. One speaks very differently to the public than to a colleague than to yourself. Similarly, code is written for someone too. Most of the time it is for your future self (as you are most likely the maintainer of the code you've written), but it is also for your colleagues (otherwise who's going to approve your PR?), and sometimes for the public (if you're writing open source code). Code that is written once and never read again is a rarity. The only example I can think of is competitive programming, which probably explains why being good at competitive programming has so little to do with being a good software engineer.
 
 ## Coding with intent
+
+Just for illustration, which of the following code snippets do you think is better?
 
 <div style="display: flex; justify-content: space-between;">
 <div style="width: 48%;">
@@ -32,3 +36,8 @@ def add(a: float, b: float) -> float:
 ```
 </div>
 </div>
+
+Many people would automatically default to the second version with type annotations. _"Types makes the code more readable", "It makes the IDE provide better completions"_, they say. 
+
+I argue the preferred code snippet changes depending on what and who you are coding for. For example, if this code snippet is used in the "What is a function in Python?" section of a beginner's tutorial, adding type hints may confuse the learner and spark unnecessary questions --- Ignorance is bliss! Or, if you are trying to prototype as quickly as possible, say in a Hackathon, no one would care if you can't pass all the MyPy type checks, but someone would if you don't manage to deliver the project in time.
+
